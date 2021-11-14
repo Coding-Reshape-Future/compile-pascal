@@ -1,0 +1,12 @@
+{
+    "shell": true,
+"cmd": ["fpc", "${file_path}/${file_base_name}", "&&", "start", "cmd", "/c", "$file_base_name.exe & @echo. & @echo. & pause>nul|set/p =Endgame ..."],
+"selector": "source.pascal",
+"variants": [
+ {
+  "cmd": ["fpc", "${file_path}/${file_base_name}", "&&", "start", "cmd", "/c", "$file_base_name.exe"],
+  "name": "pascal",
+  "shell": true
+ }
+]
+} 
